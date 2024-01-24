@@ -25,16 +25,13 @@ export default function Room() {
 
       const zp = ZegoUIKitPrebuilt.create(kitToken);
       zp.addPlugins({ ZegoSuperBoardManager });
-      const urlLink= window.location.protocol + '//' + window.location.host + window.location.pathname + '?roomID=' + roomID;
 
       zp.joinRoom({
-        
         container: meetingContainerRef.current,
         sharedLinks: [
           {
             name: 'Copy Link',
-            url:urlLink,
-          
+            url: window.location.protocol + '//' + window.location.host + window.location.pathname + '?roomID=' + roomID,
           },
         ],
         onUserAvatarSetter: (userList) => {
@@ -84,7 +81,7 @@ export default function Room() {
   return (
    
        
-      <div className='meeting' ref={meetingContainerRef} />
+      <div className='meeting' ref={meetingContainerRef} style={{ width: '100vw', height: '100vh' }} />
 
   );
 }
