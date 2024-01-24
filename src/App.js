@@ -5,12 +5,14 @@ import Room from './Components/Room';
 
 function App() {
   return (
+    <div  className='body'>
     <BrowserRouter>
     <Routes>
    <Route path='/' element={<Home/>}/>
    <Route path='/roomPage/:roomID' element={<Room/>}/>
     </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 

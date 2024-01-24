@@ -1,7 +1,7 @@
-
+import './css/home.css'
 import React,{useState,useCallback} from 'react'
-
 import { useNavigate } from "react-router-dom";
+import brandTag from './nexusmeet-high-resolution-logo-transparent.png'
 
 export default function Home() {
     const [value,setvalue]=useState();
@@ -16,15 +16,15 @@ export default function Home() {
     },[navigate,value])
   return (
     <>
-    <div>Home</div>
+     <div className='brandDiv'><img className='brandImage' src={brandTag}/></div>
+    <div className='homeBody'>
+      <h2 className='joinRoom'> JOIN ROOME</h2>
 
-    <div id="div">
+    <div >
 
-        <input type="text" placeholder='Enter Romm Code' value={value} onChange={e=>setvalue(e.target.value)}/>
+        <input className='inputID' type="text" placeholder='Enter Romm Code' value={value} onChange={e=>setvalue(e.target.value)}/>
         <button onClick={handeljoinRomm}>Join</button>
-          
-       
-       
+    </div>
     </div>
     </>
   )

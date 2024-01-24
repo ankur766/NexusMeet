@@ -1,0 +1,52 @@
+/* home.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #000000, #333333);
+    color: #ffffff;
+  }
+  
+  .homeContainer {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .joinRoom {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4caf50; /* Green color, you can change it */
+  }
+  
+  .inputID {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50; /* Green color, you can change it */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .brandDiv {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .brandImage {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+  }
+  /* Add more styles as needed */
+  
