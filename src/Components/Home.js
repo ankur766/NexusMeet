@@ -16,7 +16,9 @@ export default function Home() {
     },[navigate,value])
   return (
     <>
+
      <div className='brandDiv'><img className='brandImage' src={brandTag}/></div>
+            <h2 className='name'>ANKUR KUMAR </h2>
     <div className='homeBody'>
       <h2 className='joinRoom'> JOIN ROOME</h2>
 
